@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Muli', sans-serif;;
+    font-size: 14px;
+    margin: auto;
+}
+
 .container {
-    
+    padding: 20px 40px;
+    background-color: rgb(24, 70, 97);
+    border-radius: 5px;
+}
+
+.container h2 {
+    text-align: center;
+
 }
