@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-<body>
-  <h1 id="title">Survey Form</h1>
-  </body>
-  <p id="description"> This is a survey form practice for freeCodeCamp</p>
-  <form id="survey-form">
-   <label id="name-label">Name: </label><input id="name" type="name" required placeholder="#name"/>
-   <label id="email-label">Email: </label><input id="email" type="email" required placeholder="adriansantana.v@gmail.com"/>
-   <label id="number-label">Number: </label><input id="number" type="number" required placeholder="e.g. (347)320-2034"  min="8" max="16"/>
-   <select id="dropdown" name="#options"> 
-    <option value="1">This is the 1st option</option>
-    <option value="2">This is the 2nd option</option>
-    <option value="3">This is the 3rd option</option>
-    <option value="4">This is the 4th option</option>
-  </select>  
 
-  <fieldset>
-    <label for=""><input type="radio">Radio 1</label>
-    <label for=""><input type="radio">Radio 2</label>
-  </fieldset>
-  </form>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> This is a survey form practice for freeCodeCamp</p>
+    <div class="name-email"></div>
+    <form id="survey-form">
+
+      <div class="name-email">
+        <label id="name-label">Name: </label><input id="name" type="name" required placeholder="#name" />
+        <label id="email-label">Email: </label><input id="email" type="email" required
+          placeholder="adriansantana.v@gmail.com" />
+        <label id="number-label">Number: </label><input id="number" type="number" required
+          placeholder="e.g. (347)320-2034" min="8" max="16" />
+        <select id="dropdown" name="#options">
+          <option value="1">This is the 1st option</option>
+          <option value="2">This is the 2nd option</option>
+          <option value="3">This is the 3rd option</option>
+          <option value="4">This is the 4th option</option>
+        </select>
+      </div>
+      <div class="">
+        <fieldset>
+          <label for="radio"><input type="radio" name="radio-1" value="radio-1">Radio 1</label>
+          <label for="radio"><input type="radio" name="radio-1" value="radio-2">Radio 2</label>
+          <label for="check-box">
+            <input class="radBox" type="checkbox" name="checkbox" value="checkbox">checkbox
+          </label>
+          <label for="check-box">
+            <input type="checkbox" name="checkbox" value="checkbox">checkbox
+          </label>
+        </fieldset>
+        <label for="add-comments"> Provide additional comments:
+          <textarea name="add-comments" id="add-comments" cols="30" rows="3"
+            placeholder="Adrian is a great programmer, and wish I could hire him. "></textarea>
+        </label>
+
+        <input type="submit" value="Submit" id="submit">
+        <button type="submit" value="Submit" id="submit">Submit</button>
+
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>

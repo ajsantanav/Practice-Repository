@@ -75,7 +75,8 @@ h1 {
 
 .split.left {
     left: 0;
-    background: url('/50Days/images/ps.jpg');
+    background: url('/images/ps.jpg');
+    
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -90,7 +91,7 @@ h1 {
 
 .split.right {
     right: 0;
-    background: url('/50Days/images/xbox.jpg');
+    background: url('/images/xbox.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
