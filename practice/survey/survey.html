@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Survey Form</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey</title>
 </head>
 
+
 <body>
-  <div class="container">
-    <h1 id="title">Survey Form</h1>
-    <p id="description"> This is a survey form practice for freeCodeCamp</p>
-    <div class="name-email"></div>
-    <form id="survey-form">
 
-      <div class="name-email">
-        <label id="name-label">Name: </label><input id="name" type="name" required placeholder="#name" />
-        <label id="email-label">Email: </label><input id="email" type="email" required
-          placeholder="adriansantana.v@gmail.com" />
-        <label id="number-label">Number: </label><input id="number" type="number" required
-          placeholder="e.g. (347)320-2034" min="8" max="16" />
-        <select id="dropdown" name="#options">
-          <option value="1">This is the 1st option</option>
-          <option value="2">This is the 2nd option</option>
-          <option value="3">This is the 3rd option</option>
-          <option value="4">This is the 4th option</option>
-        </select>
-      </div>
-      <div class="">
-        <fieldset>
-          <label for="radio"><input type="radio" name="radio-1" value="radio-1">Radio 1</label>
-          <label for="radio"><input type="radio" name="radio-1" value="radio-2">Radio 2</label>
-          <label for="check-box">
-            <input class="radBox" type="checkbox" name="checkbox" value="checkbox">checkbox
-          </label>
-          <label for="check-box">
-            <input type="checkbox" name="checkbox" value="checkbox">checkbox
-          </label>
-        </fieldset>
-        <label for="add-comments"> Provide additional comments:
-          <textarea name="add-comments" id="add-comments" cols="30" rows="3"
-            placeholder="Adrian is a great programmer, and wish I could hire him. "></textarea>
-        </label>
 
-        <input type="submit" value="Submit" id="submit">
-        <button type="submit" value="Submit" id="submit">Submit</button>
+    <div class="container">
 
-      </div>
-    </form>
-  </div>
+        <div class="header">
+            <h1 id="title">Survey</h1>
+            <p id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <form id="survey-form" class="form-style">
+            <!--Person Info Section-->
+            <div class="form-group">
+                <label id="name-label">Name: <input type="text" id="name" required placeholder="John Doe"></label>
+            </div>
+            <div class="form-group">
+                <label id="email-label">Email: <input type="email" id="email" required placeholder="John Doe"></label>
+            </div>
+            <div class="form-group">
+                <label id="number-label">Age: <input type="number" id="number" min="10" max="99" required placeholder="John Doe"></label>
+            </div>
+            <!--Opinion and thoughts-->
+            
+            <div class="div-sections">
+                <label id="dropdown-select">What do you describe your self as?</label>
+                <select id="dropdown" name="#options">
+                    <option value="1">This is the 1st option</option>
+                    <option value="2">This is the 2nd option</option>
+                    <option value="3">This is the 3rd option</option>
+                    <option value="4">This is the 4th option</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-group" id="dropdown-select">What did you like the most about the website?</label>
+                <select id="dropdown" name="#options">
+                    <option value="1">This is the 1st option</option>
+                    <option value="2">This is the 2nd option</option>
+                    <option value="3">This is the 3rd option</option>
+                    <option value="4">This is the 4th option</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="radio">Did you like the website?</label>
+                <fieldset>
+                    <label for="radio"><input class="inline" type="radio" name="radio-1" value="radio-1">Radio 1</label>
+                    <label for="radio"><input class="inline" type="radio" name="radio-1" value="radio-2">Radio 2</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="checkbox">What type of features would you like to see in the future?</label>
+                <fieldset>
+                    <label for="checkbox"><input class="inline" type="checkbox" name="radio-1" value="radio-1">Radio 1</label>
+                    <label for="checkbox"><input class="inline" type="checkbox" name="radio-1" value="radio-2">Radio 2</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="add-comments"> Provide additional comments:
+                    <textarea name="add-comments" id="add-comments" cols="30" rows="3"
+                        placeholder="Enter your comment here."></textarea>
+                </label>
+            </div>
+            <div>
+                <button type="submit" value="Submit" id="submit">Submit</button>
+            </div>
+            
+
+        </form>
+    </div>
 </body>
 
 </html>
