@@ -17,7 +17,7 @@ body {
 
 
 .container {
-    background-color: rgb(50, 52, 58);
+    background-color: rgb(42, 44, 49);
     width: 80%;
     max-width: 700px;
     min-width: 200px;
@@ -25,7 +25,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
-    border-left: white 3px solid;
     border-radius: 5px;
 }
 
