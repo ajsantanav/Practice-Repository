@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    font-family: 'Muli', sans-serif;;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Muli', sans-serif;;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(40, 50, 107);
+    padding: 20px 40px;
+    border-radius: 5px;
+    width: 50%;
+    height: 90%;
+    border-left: white solid;
+}
+
+.container h1,
+.container p {
+    text-align: center;
+}
+
+label,
+textarea,
+select {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+select {
+    border: none;
+}
+
+input {
+    border: none;
+}
+
+.name-email 
+{
+    border-bottom: white 1px solid;
+    padding: 1px;
+    margin: 1px;
+}
+
+fieldset {
+    border: none;
+    border-bottom: #fff solid 1px;
+    margin: 1px;
+    padding: 1px;
+}
