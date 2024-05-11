@@ -7,12 +7,14 @@
     color: white;
 }
 
+
 :root {
     --navy-blue: #000080;
     --red-crimson: #DC143C;
     --purple: #430145;
     min-width: 400px;
     min-height: 820px;
+    color: white;
   }
 
 body {
