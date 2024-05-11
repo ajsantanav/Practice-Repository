@@ -2,7 +2,9 @@
 
 *, ::before, ::after {
     box-sizing: border-box;
-
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
 
 :root {
@@ -29,4 +31,8 @@ nav {
 
 img {
     width: 4rem;
+}
+
+a::after {
+    color: white;
 }
